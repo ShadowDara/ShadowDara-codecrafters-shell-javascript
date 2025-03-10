@@ -45,7 +45,6 @@ function printtype(cmdName) {
       const fullPath = path.join(p, cmdName);
       if(fs.existsSync(fullPath) && fs.statSync(fullPath).isFile()) {
         console.log(`${cmdName} is ${fullPath}`);
-        console.log("hello")
         found = true;
       }
     }
