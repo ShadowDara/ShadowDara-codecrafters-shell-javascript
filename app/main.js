@@ -8,11 +8,26 @@ const rl = readline.createInterface({
 function checkanswer(answer) {
   if (answer == "exit 0" || answer == "0"){
     process.exit(0);
+
   } else if (answer.startsWith("echo ")) {
-    const result = answer.slice(5);
-    console.log(result);
+    answer = answer.slice(5);
+    console.log(answer);
+
+  } else if (answer.startsWith("type ")) {
+    answer = answer.slice(5);
+    if (answer == "echo") {
+      console.log(`${answer} is a shell builtin`);
+    } else if (answer == "exit") {
+      console.log(`${answer} is a shell builtin`);
+    } else if (answer == "type") {
+      console.log(`${answer} is a shell builtin`);
+    } else {
+      console.log(`${answer}: command not found`);
+    }
+
   //} else if (answer == "1") {
     //pass
+
   } else {
     console.log(`${answer}: command not found`);
   }
