@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 
 function checkanswer(answer) {
-  if (answer == "/exit"){
+  if (answer == "exit 0"){
     rl.close();
   //} else if (answer == "1") {
   } else {
