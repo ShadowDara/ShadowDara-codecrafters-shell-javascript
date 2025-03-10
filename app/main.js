@@ -11,10 +11,14 @@ function checkanswer(answer) {
   //} else if (answer == "1") {
   } else {
     console.log(`${answer}: command not found`);
-    rl.question()
   }
 }
 
-rl.question("$ ", (answer) => {
-  checkanswer();
-});
+function question(answere) {
+  rl.question("$ ", (answer) => {
+    checkanswer(answer);
+    question();
+  });
+}
+
+question();
