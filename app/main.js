@@ -12,7 +12,6 @@ const CMDS = ["type", "echo", "exit"];
 function checkanswer(answer) {
   // Exit
   if (answer == "exit 0" || answer == "0"){
-    console.log("Exiting...");
     process.exit(0);
 
   // Echo
