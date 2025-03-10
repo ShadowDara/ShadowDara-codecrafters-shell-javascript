@@ -22,7 +22,7 @@ function checkanswer(answer) {
     } else if (answer == "type") {
       console.log(`${answer} is a shell builtin`);
     } else {
-      console.log(`${answer}: command not found`);
+      console.log(`${answer}: not found`);
     }
 
   //} else if (answer == "1") {
