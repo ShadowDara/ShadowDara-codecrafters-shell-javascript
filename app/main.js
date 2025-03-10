@@ -27,8 +27,10 @@ function checkanswer(answer) {
     answer = answer.slice(5);
     printtype(answer);    
 
-  //} else if (answer == "1") {
+  } else if (answer == "1") {
     //pass
+
+  } else if (answer == "2") {
 
   } else {
     console.log(`${answer}: command not found`);
