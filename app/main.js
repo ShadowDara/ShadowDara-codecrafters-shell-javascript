@@ -6,8 +6,8 @@ const rl = readline.createInterface({
 });
 
 function checkanswer(answer) {
-  if (answer == 1){
-    // pass
+  if (answer == invalid_command){
+    console.log("invalid_command: command not found")
   } else {
     console.log("invalid_command: command not found")
   }
